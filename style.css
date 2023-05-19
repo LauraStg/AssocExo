@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carlito&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Carlito', sans-serif; 
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #FF5733;
+}
+
+nav h1{
+    color:#581845;
+    font-family: 'Darumadrop One', cursive;
+    font-size: 30px;
+}
+
+nav .onglets{
+    font-family: 'Carlito', sans-serif;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 200px;
+}
+
+nav .onglets a{
+    text-decoration: none;
+    color:black;
+    margin-right: 10px;
+    padding-bottom: 5px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('Img1.jpg');
+    background-size: cover;
+    color:#4A235A;
+    padding: 80px;
+}
+
+header h1{
+    margin: 20px;
+    padding: auto;
+    text-align: center;
+    font-family:'Carlito', sans-serif;
+    font-size: 50px;
+}
+
+header h3{
+    margin-top: -20px;
+    font-size: 20px;
+    text-align: center;
+}
+header .btn.btn-light{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.main{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .content .picture{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main .content .picture .left{
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color:#FAD7A0;
+    color:#283747;
+}
+
+.main .content .picture .right{
+    flex: 0 0 70%;
+}
+
+.main .content .picture .right img{
+    height: 400px;
+    width: 500px;
+    margin-top: 5px;
+}
+
+footer{
+    margin-top: 40px;
+    border-top: 5px solid #581845;
+    background-color: black ;
+    color: whitesmoke;
+    padding: 30px 100px;
+}
+
+footer h1{
+    font-family: 'Carlito', sans-serif;
+    border-bottom: 1px solid whitesmoke; 
+    width: 20%;
+    padding-bottom: 5px;
+}
+
+h2{
+    font-family: 'Carlito', sans-serif;
+    margin: auto;
+    padding-bottom: 20px;
+}
+footer .services{
+    flex-wrap: wrap;
+    margin-top: -10px;
+    display: flex;
+}
+
+footer .services .service{
+    margin-right: 30px;
+    padding: 10px;
+}
+
+footer .services .service p{
+    max-width: 300px;
+}
+
+footer #contact{
+    color: rgb(180 180 180);
+}
+
+
+@media screen and (max-width:680px){
+    nav .onglets{
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .main .picture{
+        margin: 10px;
+    }
+    .main .content .picture .right img{
+        height: 200px;
+        width: 100%;
+        margin-top: 0px;
+    }
+    .main .content .picture{
+        display: block;
+    }
+    footer{
+        padding:30px;
+    }
+}
